@@ -25,4 +25,8 @@ public class HomeController {
         model.addAttribute("products", products);
         return "products";
     }
+    @GetMapping("/login")
+    String login() {
+        return "login";
+    }
 }
